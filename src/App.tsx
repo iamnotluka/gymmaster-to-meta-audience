@@ -51,7 +51,15 @@ function App() {
 	return (
 		<div style={{ padding: 40, fontFamily: "sans-serif" }}>
 			<h1>GymMaster → Meta Audience</h1>
-
+			<p style={{ fontSize: 13 }}>
+				How to:{" "}
+				<a
+					href="https://www.loom.com/share/4e729736df244536908fecb8e52e3dcd?sid=51bf7450-54d3-4e57-ab6b-bc151c333946"
+					target="_blank"
+				>
+					https://www.loom.com/share/4e729736df244536908fecb8e52e3dcd?sid=51bf7450-54d3-4e57-ab6b-bc151c333946
+				</a>
+			</p>
 			<section style={{ marginTop: 20 }}>
 				<h3>Step 1: Upload File</h3>
 				<input type="file" accept=".csv" onChange={handleFileUpload} />
