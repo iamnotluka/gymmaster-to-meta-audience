@@ -1,13 +1,356 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+	margin: 0;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
+		"Droid Sans", "Helvetica Neue", sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+	font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+.App {
+	text-align: center;
+}
+
+.App-logo {
+	height: 40vmin;
+	pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+	.App-logo {
+		animation: App-logo-spin infinite 20s linear;
+	}
+}
+
+.App-header {
+	background-color: #282c34;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	font-size: calc(10px + 2vmin);
+	color: white;
+}
+
+.App-link {
+	color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+/* Add this to your CSS file - these match the Tailwind classes used in Option 3 */
+
+.min-h-screen {
+	min-height: 100vh;
+}
+
+.bg-white {
+	background-color: #ffffff;
+}
+
+.max-w-3xl {
+	max-width: 48rem;
+}
+
+.mx-auto {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.px-8 {
+	padding-left: 2rem;
+	padding-right: 2rem;
+}
+
+.py-20 {
+	padding-top: 5rem;
+	padding-bottom: 5rem;
+}
+
+.border-b {
+	border-bottom-width: 1px;
+}
+
+.border-gray-200 {
+	border-color: #e5e7eb;
+}
+
+.pb-8 {
+	padding-bottom: 2rem;
+}
+
+.mb-12 {
+	margin-bottom: 3rem;
+}
+
+.text-5xl {
+	font-size: 3rem;
+	line-height: 1;
+}
+
+.font-light {
+	font-weight: 300;
+}
+
+.text-gray-900 {
+	color: #111827;
+}
+
+.tracking-tight {
+	letter-spacing: -0.025em;
+}
+
+.mb-3 {
+	margin-bottom: 0.75rem;
+}
+
+.text-sm {
+	font-size: 0.875rem;
+	line-height: 1.25rem;
+}
+
+.text-gray-500 {
+	color: #6b7280;
+}
+
+.text-gray-700 {
+	color: #374151;
+}
+
+.hover\:text-gray-900:hover {
+	color: #111827;
+}
+
+.border-b {
+	border-bottom-width: 1px;
+}
+
+.border-gray-400 {
+	border-color: #9ca3af;
+}
+
+.hover\:border-gray-900:hover {
+	border-color: #111827;
+}
+
+.transition-colors {
+	transition-property: color, background-color, border-color;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	transition-duration: 150ms;
+}
+
+.space-y-12 > :not([hidden]) ~ :not([hidden]) {
+	margin-top: 3rem;
+}
+
+.flex {
+	display: flex;
+}
+
+.items-baseline {
+	align-items: baseline;
+}
+
+.gap-4 {
+	gap: 1rem;
+}
+
+.mb-4 {
+	margin-bottom: 1rem;
+}
+
+.font-mono {
+	font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+.text-gray-400 {
+	color: #9ca3af;
+}
+
+.text-2xl {
+	font-size: 1.5rem;
+	line-height: 2rem;
+}
+
+.ml-12 {
+	margin-left: 3rem;
+}
+
+.block {
+	display: block;
+}
+
+.w-full {
+	width: 100%;
+}
+
+.text-gray-600 {
+	color: #4b5563;
+}
+
+.file\:mr-4::file-selector-button {
+	margin-right: 1rem;
+}
+
+.file\:py-2::file-selector-button {
+	padding-top: 0.5rem;
+	padding-bottom: 0.5rem;
+}
+
+.file\:px-5::file-selector-button {
+	padding-left: 1.25rem;
+	padding-right: 1.25rem;
+}
+
+.file\:rounded-none::file-selector-button {
+	border-radius: 0;
+}
+
+.file\:border::file-selector-button {
+	border-width: 1px;
+}
+
+.file\:border-gray-900::file-selector-button {
+	border-color: #111827;
+}
+
+.file\:bg-transparent::file-selector-button {
+	background-color: transparent;
+}
+
+.file\:text-gray-900::file-selector-button {
+	color: #111827;
+}
+
+.file\:font-light::file-selector-button {
+	font-weight: 300;
+}
+
+.hover\:file\:bg-gray-50:hover::file-selector-button {
+	background-color: #f9fafb;
+}
+
+.file\:cursor-pointer::file-selector-button {
+	cursor: pointer;
+}
+
+.cursor-pointer {
+	cursor: pointer;
+}
+
+.mt-3 {
+	margin-top: 0.75rem;
+}
+
+.text-xs {
+	font-size: 0.75rem;
+	line-height: 1rem;
+}
+
+.px-8 {
+	padding-left: 2rem;
+	padding-right: 2rem;
+}
+
+.py-2\.5 {
+	padding-top: 0.625rem;
+	padding-bottom: 0.625rem;
+}
+
+.bg-gray-900 {
+	background-color: #111827;
+}
+
+.text-white {
+	color: #ffffff;
+}
+
+.hover\:bg-gray-800:hover {
+	background-color: #1f2937;
+}
+
+.disabled\:bg-gray-200:disabled {
+	background-color: #e5e7eb;
+}
+
+.disabled\:text-gray-400:disabled {
+	color: #9ca3af;
+}
+
+.disabled\:cursor-not-allowed:disabled {
+	cursor: not-allowed;
+}
+
+.overflow-x-auto {
+	overflow-x: auto;
+}
+
+.border {
+	border-width: 1px;
+}
+
+.min-w-full {
+	min-width: 100%;
+}
+
+.divide-y > :not([hidden]) ~ :not([hidden]) {
+	border-top-width: 1px;
+}
+
+.divide-gray-200 > :not([hidden]) ~ :not([hidden]) {
+	border-color: #e5e7eb;
+}
+
+.bg-gray-50 {
+	background-color: #f9fafb;
+}
+
+.px-6 {
+	padding-left: 1.5rem;
+	padding-right: 1.5rem;
+}
+
+.py-3 {
+	padding-top: 0.75rem;
+	padding-bottom: 0.75rem;
+}
+
+.text-left {
+	text-align: left;
+}
+
+.uppercase {
+	text-transform: uppercase;
+}
+
+.tracking-wider {
+	letter-spacing: 0.05em;
+}
+
+.divide-gray-100 > :not([hidden]) ~ :not([hidden]) {
+	border-color: #f3f4f6;
+}
+
+.hover\:bg-gray-50:hover {
+	background-color: #f9fafb;
+}
+
+.py-4 {
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+}
+
+.italic {
+	font-style: italic;
 }
